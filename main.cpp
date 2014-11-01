@@ -22,7 +22,7 @@ template<int N, typename std::enable_if<N % 5 == 0 && N % 3 != 0, bool>::type> v
 template<int N, typename std::enable_if<N % 15 == 0, bool>::type> void print()
 {
    print<N-1>();
-   std::cout << "Fizzbuzz" << std::endl;
+   std::cout << "FizzBuzz" << std::endl;
 }
 
 template<int N, typename std::enable_if<N == 1, bool>::type> void  print()
